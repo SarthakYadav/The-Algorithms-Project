@@ -3,7 +3,7 @@
 	Author : Sarthak Yadav
 	
 	Principles: 
-		- Binary Search is a searching algorithm with and a worst case complexity of O(log n)
+		- Binary Search is a searching algorithm with a worst case complexity of O(log n)
 		- For more details about Binary Search visit https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/
 
 	Prerequites:
