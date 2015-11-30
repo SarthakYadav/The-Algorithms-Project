@@ -18,11 +18,11 @@ public class InsertionSortDemo {
 
 	public static void insertion_sort(int[] arr)
 	{
-		for(int j=1;j<=arr.length-1;j++)
+		for(int j=1;j<=arr.length-1;j++)						//iterates from the 2nd element of the array (index no: 1)
 		{
-			int key=arr[j];
-			int i=j-1;
-			while(i>=0 && arr[i]>key)
+			int key=arr[j];										//sets key as the value on the current index
+			int i=j-1;	
+			while(i>=0 && arr[i]>key)							//keeps check if i is non negative and the other test condition
 			{
 				arr[i+1]=arr[i];
 				i-=1;
@@ -33,29 +33,34 @@ public class InsertionSortDemo {
 	
 	public static void main(String[] args) 
 	{
-		//implementation of insertion_sort in Java
-		Scanner scanner=new Scanner(System.in);
+		// Implementation of Insertion Sort
 		
-		System.out.println("---- Implementing Sorting Algorithms ----\n");
+		
+		Scanner scanner=new Scanner(System.in);												//to get input from Console
+		System.out.println("---- Implementing Insertion Sort Algorithm ----");
+		
 		System.out.println("Enter the num of elements in the array");
-		int _num=scanner.nextInt();
+		
+		
+		int _num=scanner.nextInt();														//gets the next integer from the console
 		int[] arr=new int[_num];
 		System.out.println("Now enter the elements in the array");
 		for (int i = 0; i < arr.length; i++) 
 		{
-		{
 			arr[i]=scanner.nextInt();
 		}
-		
-		System.out.println("Now we will print the sorted array ");
+		scanner.close();															//close the scanner stream
+		System.out.println("Now we will print the sorted array \n");
+
 		insertion_sort(arr);
 		
-		for (int i : arr) 
-			System.out.println(i);
+		for (int q : arr) 
+		{
+			System.out.println(q);
 		}
-		
-		scanner.close();
 		System.out.println("\n\n------------ End ------------ \n\n");
+		
 	}
+
 
 }
