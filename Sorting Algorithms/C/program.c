@@ -39,6 +39,7 @@ void print_array(int arr[],int _arraySize)						//array print function
 int main()
 {
 	int n,i,arr[max_size];
+	int temp[max_size];
 	clock_t start_t,end_t;										//inbuilt clock for measuring performance
 	double total_t;
 	printf("---- Implementing Sorting Algorithms ----\n");
@@ -48,7 +49,7 @@ int main()
 	randomizer(arr,n);
 	
 	start_t=clock();
-	quick_sort(arr,0,n-1);											//use your desired sorting algorithm's function here
+	merge_sort(arr,temp,0,n-1);											//use your desired sorting algorithm's function here
 	end_t=clock();
 	total_t=(double)(end_t-start_t)/CLOCKS_PER_SEC;
 	
