@@ -5,7 +5,7 @@
 	Principles: 
         - Heap sort is a comparison based sorting technique based on Binary Heap data structure.
         - We use max-heap for heapsort , whereas min heap is used as priority queues. 
-		- For more details about Merge Sort visit
+		- For more details about heap Sort visit
 				 https://www.topcoder.com/community/data-science/data-science-tutorials/sorting/
         - For more details on heaps, view the Data Structures directory		
 	Instructions:
