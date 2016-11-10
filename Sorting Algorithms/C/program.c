@@ -49,7 +49,8 @@ int main()
 	randomizer(arr,n);
 	
 	start_t=clock();
-	merge_sort(arr,temp,0,n-1);											//use your desired sorting algorithm's function here
+	//merge_sort(arr,temp,0,n-1);											//use your desired sorting algorithm's function here
+	quick_sort(arr,0,n-1);
 	end_t=clock();
 	total_t=(double)(end_t-start_t)/CLOCKS_PER_SEC;
 	
